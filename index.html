@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>button</title>
+<script async="async" src="https://netpayment.merpay.com/sdk/widget.js"></script>
+</head>
+<body>
+<merpay-button></merpay-button>
+<script>
+  var button = document.getElementsByTagName('merpay-button')[0];
+  button.addEventListener('click', function () {
+    alert('clicked');
+  });
+</script>
+</body>
+</html>
