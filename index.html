@@ -4,12 +4,20 @@
 <script async="async" src="https://netpayment.merpay.com/sdk/widget.js"></script>
 </head>
 <body>
-<merpay-button></merpay-button>
+<div style="margin-bottom: 24px;">
+  <merpay-button></merpay-button>
+</div>
+<div style="width: 312px; height: auto;">
+  <merpay-button></merpay-button>
+</div>
 <script>
-  var button = document.getElementsByTagName('merpay-button')[0];
-  button.addEventListener('click', function () {
-    alert('clicked');
-  });
+  var clickHandler = function() { alert('clicked'); };
+
+  var button1 = document.getElementsByTagName('merpay-button')[0];
+  button1.addEventListener('click', clickHandler);
+
+  var button2 = document.getElementsByTagName('merpay-button')[1];
+  button2.addEventListener('click', clickHandler);
 </script>
 </body>
 </html>
